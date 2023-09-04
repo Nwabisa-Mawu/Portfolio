@@ -4,3 +4,64 @@
   font-weight: 400;
 }
 
+/* Animated gradient background */
+
+.contenido1 {
+  /*position of animation on page*/
+  position: absolute;
+  top: 31%;
+  /*controls at what point the background starts in the parent element*/
+  left: 0;
+  width: 100%;
+  /*controls the width of the background in the parent element*/
+  height: 100%;
+  /*controls the height of the background in the parent element*/
+  margin-top: -200px;
+  overflow: hidden;
+  /*cleans edges by removing animation scrollbars*/
+}
+
+body {
+  /*linear gradient*/
+  background: linear-gradient(60deg, rgba(123, 233, 251, 1)0%, rgba(35, 185, 255, 1)50%, rgba(7, 112, 172, 1)100%);
+  background-size: 400% 400%;
+  /*controls how far the waves will flow from each*/
+  animation: AnimationName 11s ease infinite;
+}
+
+#ref-block {
+  width: 60%;
+  height: 50%;
+  border-style: groove;
+  background-color: rgba(192, 132, 151, 0.4);
+  box-shadow: outset 0px 4px 4px rgba(192, 132, 151, 0.6);
+  border-radius: 56px;
+  border-style: outset;
+  border-width: 5px;
+  border-color: rgba(192, 132, 151, 0.6);
+}
+
+p{
+  color: #ffffff;
+}
+@keyframes AnimationName {
+  0% {
+      background-position: 0% 50%
+  }
+
+  25% {
+      background-position: 50% 36%;
+  }
+
+  50% {
+      background-position: 100% 48%
+  }
+
+  75% {
+      background-position: 50% 36%;
+  }
+
+  100% {
+      background-position: 0% 50%
+  }
+}
