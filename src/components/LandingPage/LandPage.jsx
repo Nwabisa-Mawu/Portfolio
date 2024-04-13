@@ -6,7 +6,7 @@ import GreetingCard from "./GreetingCard";
 
 const LandPage = () => {
 	return (
-		<Container className="mt-4">
+		<Container className="mt-4" id="home">
 			<Row className="gx-0 align-items-center">
 				{/* Greetign column */}
 				<Col lg={6} className="mb-5 mb-lg-0  me-lg-n5 rounded bg-light">

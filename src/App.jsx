@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import Projects from "./components/Projects";
+import Projects from "./components/Projects/Projects";
 import LandPage from "./components/LandingPage/LandPage";
 import Header from "./components/Header";
 import "./index.css";
