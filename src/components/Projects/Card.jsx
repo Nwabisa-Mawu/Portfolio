@@ -1,38 +1,36 @@
 import React from "react";
+// css imports
 import { Container, Row, Col, Card, Image } from "react-bootstrap";
-import tally from "../../assets/images/TallyVanilla.png";
-import bookConnect from "../../assets/images/BookConnect.png";
-import memeGen from "../../assets/images/MemeGenerator.png";
+import "../components.css"
 
-const Cards = () => {
+const Cards = (props) => {
+
+	const { image, altText, repoLink, webLink, title, subtitle, description } = props;
+
     return (
 			<Container>
-				<Card style={{ width: '30rem' }}>
+					<Card style={{ width: '30rem' }}>
 						<Row>
 							<Col className="m-3">
-								<Image fluid src={bookConnect} alt="Tally counter Vanilla" className="m-2" rounded />
+								<Image fluid src={image} alt={altText} className="m-2" rounded />
 								<Row>
 									<Col>
-										<Card.Link href="#">
-											<i></i>Code Repo</Card.Link>
+										<Card.Link href={repoLink}>Code Repo</Card.Link>
 									</Col>
 									<Col>
-										<Card.Link href="#">Website</Card.Link>
+										<Card.Link href={webLink}>Website</Card.Link>
 									</Col>
 								</Row>
 							</Col>
 							<Col>
 								<Card.Body>
-									<Card.Title>BookConnect</Card.Title>
-									<Card.Subtitle className="mb-2 text-muted">Technologies used</Card.Subtitle>
-									<Card.Text className="dark-text">
-										Some quick example text to build on the card title and make up the
-										bulk of the card's content.
-									</Card.Text>
+									<Card.Title className="title mb-3">{title}</Card.Title>
+									<Card.Subtitle className="mb-3 text-muted">{subtitle}</Card.Subtitle>
+									<Card.Text className="dark-text">{description}</Card.Text>
 								</Card.Body>
 							</Col>
 						</Row>
-				</Card>
+				</Card>				
 			</Container>
     );
 };

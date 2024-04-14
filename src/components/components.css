@@ -1,0 +1,11 @@
+
+.title {
+    font-size: 1.8rem;
+}
+
+.heading {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--text-colour);
+}

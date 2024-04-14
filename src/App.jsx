@@ -2,7 +2,8 @@
 import React from "react";
 import Projects from "./components/Projects/Projects";
 import LandPage from "./components/LandingPage/LandPage";
-import Header from "./components/Header";
+import Header from "./components/LandingPage/Header";
+import Skills from "./components/Skills/Skills"
 import "./index.css";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <div>
         <Header />
         <LandPage />
+        <Skills />
         <Projects />
       </div>
     </div>

@@ -1,0 +1,29 @@
+[
+    {
+        "image": "/src/assets/images/TallyVanilla.png",
+        "altText": "Tally counter Vanilla",
+        "repoLink": "https://github.com/Nwabisa-Mawu/NWAMAW034_FTC2301_GroupB_NwabisaMawu_IWA/tree/master/IWA_01",
+        "websiteLink": "url to the website",
+        "title": "Tally Counter",
+        "subtitle": "Technologies used",
+        "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+        "image": "/src/assets/images/BookConnect.png",
+        "altText": "book connect",
+        "repoLink": "https://github.com/Nwabisa-Mawu/NWAMAW034_FTC2301_GroupB_NwabisaMawu_IWA_19_Capstone",
+        "websiteLink": "url to the website",
+        "title": "BookConnect",
+        "subtitle": "Technologies used",
+        "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+        "image": "/src/assets/images/MemeGenerator.png",
+        "altText": "meme generator",
+        "repoLink": "https://memegenny.netlify.app/",
+        "websiteLink": "url to the website",
+        "title": "Meme Generator",
+        "subtitle": "Technologies used",
+        "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    }
+]
