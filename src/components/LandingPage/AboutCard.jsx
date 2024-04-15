@@ -6,7 +6,7 @@ import { Card } from "react-bootstrap";
 const About = () => {
 	return (
         <Card>
-					<Card.Body className="p-lg-5 shadow-5">
+					<Card.Body className=" shadow-5">
 						<h2 className="fw-bold">
 							<span className="text-primary">Hi there!👋</span>
 						</h2>

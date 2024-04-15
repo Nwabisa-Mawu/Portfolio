@@ -9,3 +9,8 @@
     text-align: center;
     color: var(--text-colour);
 }
+
+.page-structure {
+  /* padding-top: 7rem; */
+  height: 100vh;
+}

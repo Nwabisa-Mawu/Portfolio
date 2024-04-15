@@ -3,7 +3,7 @@ import { Container, Row, Col, Nav, Navbar } from "react-bootstrap";
 
 const Header = () => {
 	return (
-		<Navbar expand="md"  bg="light" data-bs-theme="light" sticky="top" >
+		<Navbar expand="md" className="header" data-bs-theme="light" sticky="top" >
       <Container>
       <Navbar.Brand href="#contact" className="p-2 text-animate">Let's Talk</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />

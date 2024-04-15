@@ -25,7 +25,7 @@ const Projects = () => {
 	}
 
 	return (
-		<Container className="text-center mt-2 mb-5" id="projects">
+		<Container className="text-center mt-2 mb-5 page-structure" id="projects">
 			 <h2 className="heading">My <span>Projects</span></h2>
 			{/* row of cards/column on small screen */}
 			<Row>

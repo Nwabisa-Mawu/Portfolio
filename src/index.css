@@ -1,7 +1,15 @@
 :root {
-  font-family: Roboto, Helvetica, Arial, sans-serif;
+  /* font-family: Roboto, Helvetica, Arial, sans-serif; */
   line-height: 1.5;
   font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
 }
 
 /* Animated gradient background */
@@ -40,6 +48,8 @@ body {
   border-width: 5px;
   border-color: rgba(192, 132, 151, 0.6);
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 p{
   color: #ffffff;

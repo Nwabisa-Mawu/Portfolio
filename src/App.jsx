@@ -4,6 +4,7 @@ import Projects from "./components/Projects/Projects";
 import LandPage from "./components/LandingPage/LandPage";
 import Header from "./components/LandingPage/Header";
 import Skills from "./components/Skills/Skills"
+import ContactForm from "./components/ContactForm/Form";
 import "./index.css";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <LandPage />
         <Skills />
         <Projects />
+        <ContactForm />
       </div>
     </div>
   )
