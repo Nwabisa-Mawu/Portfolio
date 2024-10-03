@@ -17,28 +17,32 @@
     <!-- Navbar -->
     <nav id="mainNav" class="navbar navbar-expand-lg navbar-light fixed-top py-3">
         <div class="container px-4 px-lg-5">
-            <a href="#home">Home</a>
-            <div id="navbarResponsive">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+            <a class="navbar-brand" href="#page-top">Home</a>
+            <button type="button" class="navbar-toggler navbar-toggler-right" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarResponsive" class="collapse navbar-collapse">
+                <ul  class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero -->
-    <header id="home">
-        <div>
-            <div>
-                <div>
-                    <h1>Title text</h1>
-                    <hr/>
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8 align-self-end">
+                    <h1 class="text-white font-weight-bold">Title text</h1>
+                    <hr class="divider"/>
                 </div>
-                <div>
-                    <p>some text</p>
-                    <a href="#about">Link to about</a>
+                <div class="col-lg-8 align-self-baseline">
+                    <p class="text-white-75 mb-5">some text</p>
+                    <a class="btn btn-primary btn-xl" href="#about">Link to about</a>
                 </div>
             </div>
         </div>
