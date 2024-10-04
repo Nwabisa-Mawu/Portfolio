@@ -49,14 +49,14 @@
     </header>
 
     <!-- About -->
-    <section id="about">
-        <div>
-            <div>
-                <div>
-                    <h2>Title</h2>
-                    <hr/>
-                    <p>Some text</p>
-                    <a href="#portfolio">Link to portfolio</a>
+    <section id="about" class="bg-primary page-section">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="text-white mt-0">Title</h2>
+                    <hr class="divider divider-light"/>
+                    <p class="text-white-75 mb-4" >Some text</p>
+                    <a class="btn btn-light btn-xl" href="#portfolio">Link to portfolio</a>
                 </div>
             </div>
         </div>
@@ -64,89 +64,88 @@
 
     <!-- Portfolio -->
     <section id="portfolio">
-        <div>
-            <div>
-                <div>
-                    <a href="">
-                        <img src="" alt="">
-                    </a>
-                    <div>
-                        <div>Project Name</div>
-                        <div>Category/Description</div>
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg" >
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="...">
+                    <div class="portfolio-box-caption">
+                        <div class="project-name">Project Name</div>
+                        <div class="project-category text-white-50">Category/Description</div>
                     </div>
+                    </a>
                 </div>
-                <div>
-                    <a href="">
-                        <img src="" alt="">
-                    </a>
-                    <div>
-                        <div>Project Name</div>
-                        <div>Category/Description</div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="...">
+                    <div class="portfolio-box-caption">
+                        <div class="project-name">Project Name</div>
+                        <div class="project-category text-white-50">Category/Description</div>
                     </div>
+                    </a>
                 </div>
-                <div></div>
-                    <a href="">
-                        <img src="" alt="">
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="...">
+                        <div class="portfolio-box-caption">
+                            <div class="project-name">Project Name</div>
+                            <div class="project-category text-white-50">Category/Description</div>
+                        </div>
                     </a>
-                    <div>
-                        <div>Project Name</div>
-                        <div>Category/Description</div>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact">
-        <div>
-            <div>
-                <div>
-                    <h2>Contact Title</h2>
-                    <hr/>
-                    <p>Some contact text</p>
+    <section id="contact" class="page-section">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 col-xl-6 text-center">
+                    <h2  class="mt-0">Contact Title</h2>
+                    <hr class="divider"/>
+                    <p class="text-muted mb-5">Some contact text</p>
                 </div>
             </div>
 
-            <div>
-                <div>
-                    <form>
+            <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+                <div class="col-lg-6">
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                         <!-- Name input -->
-                         <div>
-                            <input type="text" id="name"/>
-                            <label>Full Name:</label>
-                            <div></div>
+                         <div class="form-floating mb-3">
+                            <input class="form-control" type="text" id="name" placeholder="Enter your name..."/>
+                            <label for="name">Full Name:</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                          </div>
                          <!-- Email address input -->
-                         <div>
-                            <input type="text" id="email"/>
-                            <label>Email:</label>
-                            <div></div>
-                         </div>
-                         <!-- Phone Number input -->
-                         <div>
-                            <input type="text" id="number"/>
-                            <label>Phone Number:</label>
-                            <div></div>
+                         <div class="form-floating mb-3">
+                            <input  class="form-control" type="email" id="email" placeholder="name@example.com"/>
+                            <label for="email">Email address:</label>
+                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                          </div>
                          <!-- Message input -->
-                         <div>
-                            <input type="text" id="message"/>
-                            <label>Message:</label>
-                            <div></div>
+                         <div class="form-floating mb-3">
+                            <input class="form-control" style="height: 10rem"  type="text" id="message" placeholder="Enter your message here..."/>
+                            <label for="message">Message:</label>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                          </div>
 
                          <!-- Submit success message -->
-                          <div id="submitSuccessMessage">
-                            <div>Form submission successful!</div>
+                          <div id="submitSuccessMessage" class="d-none">
+                            <div class="text-center mb-3">
+                                <div class="fw-bolder">Form submission successful!</div>
+                            </div>
                           </div>
                            <!-- Submit Fail message -->
-                          <div id="submitFailMessage">
-                            <div>Form submission failed</div>
+                          <div id="submitFailMessage" class="d-none">
+                            <div  class="text-center text-danger mb-3">
+                                <div class="fw-bolder">Form submission failed, please try again</div>
+                            </div>
                           </div>
                           <!-- Submit button -->
-                          <div>
-                            <button id="submitButton" type="submit">Submit</button>
+                          <div class="d-grid">
+                            <button id="submitButton" class="btn btn-primary btn-xl disabled" type="submit">Submit</button>
                           </div>
                     </form>
                 </div>
@@ -157,7 +156,7 @@
     <!-- Footer -->
     <footer>
         <div>
-            <div>Copyright &copy; 2023 - Company Name</div>
+            <div>Copyright &copy; 2023 - Nwabisa Mawu</div>
         </div>
     </footer>
 </body>
